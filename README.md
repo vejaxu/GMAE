@@ -1,5 +1,7 @@
 # GMAE
-Source code of "Learning Disentangled Representations for Generalized Multi-view Clustering"
+## **[TPAMI 2026✨]**  **Learning Disentangled Representations for Generalized Multi-view Clustering** 🚀
+
+⌨️Source code content
 
 ```shell
 GMAE-Github
@@ -20,10 +22,10 @@ GMAE-Github
 └── external # 外部库
 ```
 
-## 1. Dataset
+## 1. 📊Dataset
 It can be got from: https://github.com/wangsiwei2010/awesome-multi-view-clustering
 
-## 2. Run
+## 2. ✅Run
 (1) To run the **multi-view clustering** task, use the following command:
 
 ```shell
@@ -36,9 +38,9 @@ python clustering.py
 python classification.py
 ```
 
-## 2. Main Code
+## 🧮3. Main Code
 
-### 2.1 Configuration
+### 3.1 Configuration
 
 This section defines the paths for saving logs, images, and the dataset, along with the device configuration for training.
 
@@ -55,7 +57,7 @@ parser.add_argument('--do_plot', default=True, type=bool, help='Whether to plot 
 parser.add_argument('--device', default='cuda:0', type=str, help='Device to use for training')
 ```
 
-### 2.1 Hyperparameters
+### 3.2 Hyperparameters
 
 This section defines hyperparameters related to the training process, such as the number of epochs, learning rate, and other essential parameters.
 
@@ -80,7 +82,7 @@ parser.add_argument('--pos_num', default=21, type=int, help='Positive sample num
 parser.add_argument('--do_contrast', default=True, type=bool, help='Whether to use contrastive loss')
 ```
 
-### 2.3 Dataset Preprocessing
+### 3.3 Dataset Preprocessing
 
 The dataset preprocessing implements the following functions: misaligned views, random views with missing values, and random views with noise.
 
@@ -93,7 +95,7 @@ parser.add_argument('--ratio_conflict', default=0.0, type=float, help='Conflict 
 parser.add_argument('--missing_ratio', default=0.0, type=float, help='Missing ratio')
 ```
 
-## 3. Loss
+## 4. 🔬Loss
 
 Integrating the reconstruction loss, the correlation loss, the generative adversarial loss, with the cross-entropy loss in, the objective function of our proposed GMAE is formulated as:
 
@@ -120,7 +122,7 @@ total_loss = loss_rec + args.lambda_ma * (loss_mi + loss_ad) + args.lambda_con *
 
 More details, along with detailed comments in the code, can be found in **loss.py**.
 
-## 4. Network
+## 5. 🕸️Network
 
 The **Generalized Multi-view Autoencoder (GMAE)** is a model designed to process multi-view data, where each view represents a different perspective or modality of the data. The model consists of several key components: **Encoder**, **Decoder**, **Discriminator**, and the **GMAE Model** itself, which integrates these components to learn both shared and view-specific representations.
 
@@ -138,7 +140,7 @@ The **GMAE Model** integrates all the components: it uses individual encoders an
 
 More details, along with detailed comments in the code, can be found in **models.py**.
 
-## 5. Metrics
+## 6. 🗳️Metrics
 
 The evaluation metrics derived from the test outputs for each dataset are meticulously stored in respective files within the logs directory. Concurrently, comprehensive dataset metadata, including pertinent details, is systematically logged and preserved in 1.logs/datasetInfo.csv, ensuring an easy archival and retrieval process. In our paper, the following four metrics were selected for evaluation: accuracy (ACC), normalized mutual information (NMI), adjusted Rand index (ARI), and purity (Purity).
 
@@ -169,7 +171,7 @@ recall_cluster = cluster_recall(Y_ndarray, Y_pre)
 
 More details, along with detailed comments in the code, can be found in **utils/metric.py**.
 
-## 6. 💻User Guide
+## 7. 💻User Guide
 
 All experiments were conducted using Python 3.8.15 and PyTorch 1.13.1+cu116 on a Windows PC equipped with an AMD Ryzen 9 5900HX CPU, 32GB RAM, and an Nvidia RTX 3080 GPU (16GB). 
 
