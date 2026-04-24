@@ -1,7 +1,7 @@
 # GMAE
 ## **[TPAMI 2026✨]**  **Learning Disentangled Representations for Generalized Multi-view Clustering** 🚀
 
-⌨️Source code content
+⌨️Source code list: 
 
 ```shell
 GMAE-Github
