@@ -1,7 +1,34 @@
 # GMAE
 ## **[TPAMI 2026✨]**  **Learning Disentangled Representations for Generalized Multi-view Clustering** 🚀
 
-⌨️Source code list: 
+Authors: Xin Zou,Ruimeng Liu,Chang Tang,Zhenglai Li,Xinwang Liu,Kunlun He,Wanqing Li 
+<p align="center">
+A unified model for three motion and 3D perception tasks.
+</p>
+<p align="center">
+  <a href="">
+    <img src="" alt="Logo" width="100%">
+  </a>
+</p>
+
+<p align="center">
+The flowchart of our proposed Generalized Multi-view Auto-Encoder (GMAE), a framework designed to preserve cross-view complementarity through
+disentangled representation learning.
+</p>
+
+### 🔗 Citation
+If our paper or code inspires you, please cite this paper (early access now)😊:
+```
+@article{zstarmeng2026gmae,
+  author={Xin, Zou and Ruimeng, Liu and Chang, Tang and Zhenglai, Li and Xinwang, Liu and Kunlun, He and Wanqing, Li},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={Learning Disentangled Representations for Generalized Multi-view Clustering}, 
+  year={2026},
+  doi={10.1109/TPAMI.2026.3687339}
+}
+```
+
+### ⌨️ Source code list: 
 
 ```shell
 GMAE-Github
