@@ -1,13 +1,21 @@
 # GMAE
 ## **[TPAMI 2026✨]**  **Learning Disentangled Representations for Generalized Multi-view Clustering** 🚀
 
-Authors: Xin Zou,Ruimeng Liu,Chang Tang,Zhenglai Li,Xinwang Liu,Kunlun He,Wanqing Li 
 <p align="center">
-A unified model for three motion and 3D perception tasks.
+  <a href="https://github.com/obananas">Xin Zou</a>, 
+  <a href="https://github.com/cleste-pome">Ruimeng Liu</a>, 
+  <a href="https://github.com/changtang">Chang Tang</a>, 
+  <a href="https://github.com/guanyuezhen">Zhenglai Li</a>, 
+  <a href="https://github.com/xinwangliu">Xinwang Liu</a>, 
+  <a href="">Kunlun He</a>, 
+  <a href="">Wanqing Li</a>
+</p>
+
+<p align="center">
 </p>
 <p align="center">
   <a href="">
-    <img src="" alt="Logo" width="100%">
+    <img src="framework.png" alt="Logo" width="100%">
   </a>
 </p>
 
